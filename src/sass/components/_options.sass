@@ -1,0 +1,45 @@
+.options
+    padding: 30px
+    background: #FF416C
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C)
+    background: linear-gradient(to right, #FF4B2B, #FF416C)
+    &__inner
+        max-width: 600px
+        margin: 0 auto
+    &__row
+
+        margin-bottom: 20px
+        @media screen and (min-width: 768px)
+            display: flex
+            align-items: center
+            justify-content: center
+    &__picture
+        flex-shrink: 0
+        width: 100%
+        margin-bottom: 20px
+        max-width: 320px
+        @media screen and (min-width: 768px)
+            margin-bottom: 0
+            max-width: 250px
+            margin-right: 25px
+        &-img
+            width: 100%
+            height: auto
+    &__description
+        max-width: 350px
+        &-text
+            margin-bottom: 15px
+    &__specs
+        &-list
+            list-style-type: none
+            &-item
+                display: inline
+                padding-left: 10px
+                &::before
+                    content: ''
+                    transform: translate(-5px, -4px)
+                    display: inline-block
+                    width: 5px
+                    height: 5px
+                    border-radius: 50%
+                    background-color: #fff

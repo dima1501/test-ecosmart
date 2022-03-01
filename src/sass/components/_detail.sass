@@ -1,0 +1,61 @@
+.detail
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    padding: 30px
+    background: #8e2de2
+    background: -webkit-linear-gradient(to right, #8e2de2, #4a00e0)
+    background: linear-gradient(to right, #8e2de2, #4a00e0)
+    @media screen and (min-width: 768px)
+        flex-direction: row
+    &__col
+        order: 1
+        margin-bottom: 30px
+        &:last-child
+            margin-bottom: 0
+        @media screen and (min-width: 768px)
+            order: unset
+            margin-bottom: 0
+        &.-main
+            margin: 0 0 40px
+            padding: 0 20px
+            display: flex
+            align-items: center
+            flex-direction: column
+            order: 0
+            @media screen and (min-width: 768px)
+                order: unset
+                margin: 0 40px
+        &-item
+            margin-bottom: 30px
+            &:last-child
+                margin-bottom: 0
+    &__main
+        &-picture
+            margin-bottom: 15px
+            &-img
+                max-width: 100%
+                height: auto
+
+.detail-card
+    max-width: 180px
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__picture
+        margin-bottom: 10px
+        border-radius: 50%
+        overflow: hidden
+        width: 150px
+        height: 150px
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: rgba(0,0,0,0.4)
+        &-img
+            width: 100%
+            max-width: 70px
+            height: auto
+    &__name
+        color: white

@@ -1,0 +1,84 @@
+.order
+    padding: 15px
+    background: #FF416C
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C)
+    background: linear-gradient(to right, #FF4B2B, #FF416C)
+    @media screen and (min-width: 768px)
+        padding: 30px
+    &__title
+        margin-bottom: 10px
+        font-size: 30px
+    &__timer
+        font-size: 22px
+        margin-bottom: 20px
+    &__picture
+        max-width: 230px
+        margin-bottom: 15px
+        &-img
+            max-width: 100%
+            height: auto
+    &__current-price
+        position: relative
+        font-size: 26px
+        font-weight: bold
+        animation: priceAnimation 0.65s infinite alternate
+    &__old-price
+        text-decoration: line-through
+        opacity: 0.9
+    &__inner
+        display: flex
+        align-items: center
+        flex-direction: column
+        @media screen and (min-width: 768px)
+            flex-direction: row
+            justify-content: center
+    &__content
+        padding: 20px
+        border-radius: 15px
+        color: #fff
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 20px
+        @media screen and (min-width: 768px)
+            margin-bottom: 0
+    &__form
+        $f: &
+        margin-left: 0
+        @media screen and (min-width: 768px)
+
+            margin-left: 30px
+        &-line
+            margin-bottom: 20px
+            position: relative
+            &:last-child
+                margin-bottom: 8px
+        &-input
+            background-color: #fff
+            border: 1px solid #fff
+            padding: 12px 17px
+            font-size: 18px
+            border-radius: 10px
+            -webkit-appearance: none
+            width: 100%
+            max-width: 270px
+            border: 2px solid transparent
+            transition: border-color .3s
+            &:focus
+                border-color: #1a73e8
+                & + #{$f}
+                    &-label
+                        opacity: 1
+        &-label
+            position: absolute
+            right: 4px
+            top: 0px
+            font-size: 13px
+            opacity: 0
+            transition: opacity .3s
+
+@keyframes priceAnimation
+    0%
+        transform: scale(1)
+    100%
+        transform: scale(1.2)

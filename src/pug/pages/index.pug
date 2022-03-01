@@ -1,0 +1,139 @@
+extends ../layouts/default-layout.pug
+block content
+  section.app__section
+    .app__container
+      .promo
+        video.promo__bg(src="assets/video/timelapse.mp4" autoplay muted loop)
+        .promo__inner
+          h1.promo__title LevelUp. Продукт для повышения потенции
+          .promo__content
+            img.promo__img(src="", alt="")
+            picture.promo__picture
+              source(srcset="assets/images/prod.webp" type="image/webp")
+              img(src="assets/images/prod.jpg" alt="").promo__picture-img
+            .promo__features
+              ul.promo__features-list
+                li.promo__features-item Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, asperiores!
+                li.promo__features-item Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, asperiores!
+                li.promo__features-item Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, asperiores!
+              .promo__btn
+                button(type="button").btn.btn--blue.js-order-scroll Заказать
+
+  section.app__section
+    .detail
+      .detail__col
+        .detail__col-item
+          .detail-card
+            picture.detail-card__picture
+              source(srcset="assets/images/prod.webp" type="image/webp")
+              img(src="assets/images/prod.jpg" alt="").detail-card__picture-img
+            h4.detail-card__name Lorem ipsum
+        .detail__col-item
+          .detail-card
+            picture.detail-card__picture
+              source(srcset="assets/images/prod.webp" type="image/webp")
+              img(src="assets/images/prod.jpg" alt="").detail-card__picture-img
+            h4.detail-card__name Lorem ipsum
+        .detail__col-item
+          .detail-card
+            picture.detail-card__picture
+              source(srcset="assets/images/prod.webp" type="image/webp")
+              img(src="assets/images/prod.jpg" alt="").detail-card__picture-img
+            h4.detail-card__name Lorem ipsum
+      .detail__col.-main
+        picture.detail__main-picture
+          source(srcset="assets/images/prod.webp" type="image/webp")
+          img(src="assets/images/prod.jpg" alt="").detail__main-picture-img
+        .detail__main-btn
+          button(type="button").btn.btn--white.js-order-scroll Заказать
+      .detail__col
+        .detail__col-item
+          .detail-card
+            picture.detail-card__picture
+              source(srcset="assets/images/prod.webp" type="image/webp")
+              img(src="assets/images/prod.jpg" alt="").detail-card__picture-img
+            h4.detail-card__name Lorem ipsum
+        .detail__col-item
+          .detail-card
+            picture.detail-card__picture
+              source(srcset="assets/images/prod.webp" type="image/webp")
+              img(src="assets/images/prod.jpg" alt="").detail-card__picture-img
+            h4.detail-card__name Lorem ipsum
+        .detail__col-item
+          .detail-card
+            picture.detail-card__picture
+              source(srcset="assets/images/prod.webp" type="image/webp")
+              img(src="assets/images/prod.jpg" alt="").detail-card__picture-img
+            h4.detail-card__name Lorem ipsum
+
+  section.app__section
+    .reviews
+      .glide
+        .reviews__arrows(data-glide-el="controls")
+          .reviews__arrows-item.-left(data-glide-dir="<") <
+          .reviews__arrows-item.-right(data-glide-dir=">") >
+        .reviews__slider.glide__track(data-glide-el="track")
+          .glide__slides
+            .glide__slide
+              .reviews__slide
+                picture.reviews__slide-picture
+                  source(srcset="assets/images/kerry.webp" type="image/webp")
+                  img(src="assets/images/kerry.jpg" width="150" height="150" alt="").reviews__slide-picture-img
+                .reviews__slide-content
+                  h3.reviews__slide-name Jimm
+                  p.reviews__slide-text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui aspernatur veritatis id praesentium. Corrupti, quo.
+            .glide__slide
+              .reviews__slide.glide__slide
+                picture.reviews__slide-picture
+                  source(srcset="assets/images/kerry.webp" type="image/webp")
+                  img(src="assets/images/kerry.jpg" width="150" height="150" alt="").reviews__slide-picture-img
+                .reviews__slide-content
+                  h3.reviews__slide-name Jimm
+                  p.reviews__slide-text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui aspernatur veritatis id praesentium. Corrupti, quo.
+            .glide__slide
+              .reviews__slide.glide__slide
+                picture.reviews__slide-picture
+                  source(srcset="assets/images/kerry.webp" type="image/webp")
+                  img(src="assets/images/kerry.jpg" width="150" height="150" alt="").reviews__slide-picture-img
+                .reviews__slide-content
+                  h3.reviews__slide-name Jimm
+                  p.reviews__slide-text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui aspernatur veritatis id praesentium. Corrupti, quo.
+        
+  section.app__section
+    .options
+      .options__inner
+        .options__row
+          picture.options__picture
+            source(srcset="assets/images/doctor.webp" type="image/webp")
+            img(src="assets/images/doctor.jpg" width="150" height="150" alt="").options__picture-img
+          .options__description
+            p.options__description-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati magnam adipisci repellendus incidunt, optio accusantium eligendi tempore eaque ipsa recusandae temporibus corporis nobis modi cum?
+            .options__btn
+              button(type="button").btn.btn--white.js-order-scroll Заказать
+        .options__specs
+          ul.options__specs-list
+            li.options__specs-list-item Lorem ipsum dolor, sit amet consectetur adipisicing.
+            li.options__specs-list-item Lorem ipsum dolor, sit amet consectetur adipisicing.
+            li.options__specs-list-item Lorem ipsum dolor, sit amet consectetur adipisicing.
+
+  section.app__section#orderForm
+    .order 
+      .order__inner
+        .order__content
+          h2.order__title LevelUp
+          p.order__timer#timer 30:00
+          picture.order__picture
+            source(srcset="assets/images/prod.webp" type="image/webp")
+            img(src="assets/images/prod.jpg" width="" height="" alt="").order__picture-img
+          .order__current-price 9900₽
+          .order__old-price 11900₽
+
+        form.order__form(action="")
+          .order__form-line
+            input.order__form-input#name(type="text" placeholder="Имя")
+            label.order__form-label(for="name") Дмитрий
+          .order__form-line
+            input.order__form-input#number(type="number" placeholder="Номер телефона" onkeydown="return event.keyCode !== 69")
+            label.order__form-label(for="number") +79500468473
+          .order__form-line
+            button(type="submit").btn.btn--white Заказать
