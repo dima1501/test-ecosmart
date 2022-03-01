@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pug-Sass Starter</title>
     <!-- Styles-->
     <link href="./assets/css/styles.min.css" rel="stylesheet">
@@ -21,7 +21,7 @@
               <video class="promo__bg" src="assets/video/timelapse.mp4" autoplay muted loop></video>
               <div class="promo__inner">
                 <h1 class="promo__title">LevelUp. Продукт для повышения потенции</h1>
-                <div class="promo__content"><img class="promo__img" src="" alt="">
+                <div class="promo__content">
                   <picture class="promo__picture">
                     <source srcset="assets/images/prod.webp" type="image/webp"><img class="promo__picture-img" src="assets/images/prod.jpg" alt="">
                   </picture>
@@ -46,7 +46,7 @@
               <div class="detail__col-item">
                 <div class="detail-card">
                   <picture class="detail-card__picture">
-                    <source srcset="assets/images/prod.webp" type="image/webp"><img class="detail-card__picture-img" src="assets/images/prod.jpg" alt="">
+                    <source srcset="assets/images/prod.webp" type="image/webp"><img class="detail-card__picture-img" src="assets/images/prod.jpg" width="70" height="108" alt="">
                   </picture>
                   <h4 class="detail-card__name">Lorem ipsum</h4>
                 </div>
@@ -54,7 +54,7 @@
               <div class="detail__col-item">
                 <div class="detail-card">
                   <picture class="detail-card__picture">
-                    <source srcset="assets/images/prod.webp" type="image/webp"><img class="detail-card__picture-img" src="assets/images/prod.jpg" alt="">
+                    <source srcset="assets/images/prod.webp" type="image/webp"><img class="detail-card__picture-img" src="assets/images/prod.jpg" width="70" height="108" alt="">
                   </picture>
                   <h4 class="detail-card__name">Lorem ipsum</h4>
                 </div>
@@ -62,7 +62,7 @@
               <div class="detail__col-item">
                 <div class="detail-card">
                   <picture class="detail-card__picture">
-                    <source srcset="assets/images/prod.webp" type="image/webp"><img class="detail-card__picture-img" src="assets/images/prod.jpg" alt="">
+                    <source srcset="assets/images/prod.webp" type="image/webp"><img class="detail-card__picture-img" src="assets/images/prod.jpg" width="70" height="108" alt="">
                   </picture>
                   <h4 class="detail-card__name">Lorem ipsum</h4>
                 </div>
@@ -70,7 +70,7 @@
             </div>
             <div class="detail__col -main">
               <picture class="detail__main-picture">
-                <source srcset="assets/images/prod.webp" type="image/webp"><img class="detail__main-picture-img" src="assets/images/prod.jpg" alt="">
+                <source srcset="assets/images/prod.webp" type="image/webp"><img class="detail__main-picture-img" src="assets/images/prod.jpg" width="291" height="456" alt="">
               </picture>
               <div class="detail__main-btn">
                 <button class="btn btn--white js-order-scroll" type="button">Заказать</button>
@@ -80,7 +80,7 @@
               <div class="detail__col-item">
                 <div class="detail-card">
                   <picture class="detail-card__picture">
-                    <source srcset="assets/images/prod.webp" type="image/webp"><img class="detail-card__picture-img" src="assets/images/prod.jpg" alt="">
+                    <source srcset="assets/images/prod.webp" type="image/webp"><img class="detail-card__picture-img" src="assets/images/prod.jpg" width="70" height="108" alt="">
                   </picture>
                   <h4 class="detail-card__name">Lorem ipsum</h4>
                 </div>
@@ -88,7 +88,7 @@
               <div class="detail__col-item">
                 <div class="detail-card">
                   <picture class="detail-card__picture">
-                    <source srcset="assets/images/prod.webp" type="image/webp"><img class="detail-card__picture-img" src="assets/images/prod.jpg" alt="">
+                    <source srcset="assets/images/prod.webp" type="image/webp"><img class="detail-card__picture-img" src="assets/images/prod.jpg" width="70" height="108" alt="">
                   </picture>
                   <h4 class="detail-card__name">Lorem ipsum</h4>
                 </div>
@@ -96,7 +96,7 @@
               <div class="detail__col-item">
                 <div class="detail-card">
                   <picture class="detail-card__picture">
-                    <source srcset="assets/images/prod.webp" type="image/webp"><img class="detail-card__picture-img" src="assets/images/prod.jpg" alt="">
+                    <source srcset="assets/images/prod.webp" type="image/webp"><img class="detail-card__picture-img" src="assets/images/prod.jpg" width="70" height="108" alt="">
                   </picture>
                   <h4 class="detail-card__name">Lorem ipsum</h4>
                 </div>
@@ -108,8 +108,8 @@
           <div class="reviews">
             <div class="glide">
               <div class="reviews__arrows" data-glide-el="controls">
-                <div class="reviews__arrows-item -left" data-glide-dir="&lt;"><</div>
-                <div class="reviews__arrows-item -right" data-glide-dir="&gt;">></div>
+                <div class="reviews__arrows-item -left" data-glide-dir="&lt;">&lt;</div>
+                <div class="reviews__arrows-item -right" data-glide-dir="&gt;">&gt;</div>
               </div>
               <div class="reviews__slider glide__track" data-glide-el="track">
                 <div class="glide__slides">
@@ -159,7 +159,7 @@
                   <source srcset="assets/images/doctor.webp" type="image/webp"><img class="options__picture-img" src="assets/images/doctor.jpg" width="150" height="150" alt="">
                 </picture>
                 <div class="options__description">
-                  <p class="options__description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati magnam adipisci repellendus incidunt, optio accusantium eligendi tempore eaque ipsa recusandae temporibus corporis nobis modi cum?</p>
+                  <h3 class="options__description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati magnam adipisci repellendus incidunt, optio accusantium eligendi tempore eaque ipsa recusandae temporibus corporis nobis modi cum?</h3>
                   <div class="options__btn">
                     <button class="btn btn--white js-order-scroll" type="button">Заказать</button>
                   </div>
@@ -182,12 +182,12 @@
                 <h2 class="order__title">LevelUp</h2>
                 <p class="order__timer" id="timer">30:00</p>
                 <picture class="order__picture">
-                  <source srcset="assets/images/prod.webp" type="image/webp"><img class="order__picture-img" src="assets/images/prod.jpg" width="" height="" alt="">
+                  <source srcset="assets/images/prod.webp" type="image/webp"><img class="order__picture-img" src="assets/images/prod.jpg" width="230" height="356" alt="">
                 </picture>
                 <div class="order__current-price">9900₽</div>
                 <div class="order__old-price">11900₽</div>
               </div>
-              <form class="order__form" action="">
+              <form class="order__form">
                 <div class="order__form-line">
                   <input class="order__form-input" id="name" type="text" placeholder="Имя">
                   <label class="order__form-label" for="name">Дмитрий</label>

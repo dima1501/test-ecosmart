@@ -7,7 +7,6 @@ block content
         .promo__inner
           h1.promo__title LevelUp. Продукт для повышения потенции
           .promo__content
-            img.promo__img(src="", alt="")
             picture.promo__picture
               source(srcset="assets/images/prod.webp" type="image/webp")
               img(src="assets/images/prod.jpg" alt="").promo__picture-img
@@ -26,24 +25,24 @@ block content
           .detail-card
             picture.detail-card__picture
               source(srcset="assets/images/prod.webp" type="image/webp")
-              img(src="assets/images/prod.jpg" alt="").detail-card__picture-img
+              img(src="assets/images/prod.jpg" width="70" height="108" alt="").detail-card__picture-img
             h4.detail-card__name Lorem ipsum
         .detail__col-item
           .detail-card
             picture.detail-card__picture
               source(srcset="assets/images/prod.webp" type="image/webp")
-              img(src="assets/images/prod.jpg" alt="").detail-card__picture-img
+              img(src="assets/images/prod.jpg" width="70" height="108" alt="").detail-card__picture-img
             h4.detail-card__name Lorem ipsum
         .detail__col-item
           .detail-card
             picture.detail-card__picture
               source(srcset="assets/images/prod.webp" type="image/webp")
-              img(src="assets/images/prod.jpg" alt="").detail-card__picture-img
+              img(src="assets/images/prod.jpg" width="70" height="108" alt="").detail-card__picture-img
             h4.detail-card__name Lorem ipsum
       .detail__col.-main
         picture.detail__main-picture
           source(srcset="assets/images/prod.webp" type="image/webp")
-          img(src="assets/images/prod.jpg" alt="").detail__main-picture-img
+          img(src="assets/images/prod.jpg" width="291" height="456" alt="").detail__main-picture-img
         .detail__main-btn
           button(type="button").btn.btn--white.js-order-scroll Заказать
       .detail__col
@@ -51,27 +50,27 @@ block content
           .detail-card
             picture.detail-card__picture
               source(srcset="assets/images/prod.webp" type="image/webp")
-              img(src="assets/images/prod.jpg" alt="").detail-card__picture-img
+              img(src="assets/images/prod.jpg" width="70" height="108" alt="").detail-card__picture-img
             h4.detail-card__name Lorem ipsum
         .detail__col-item
           .detail-card
             picture.detail-card__picture
               source(srcset="assets/images/prod.webp" type="image/webp")
-              img(src="assets/images/prod.jpg" alt="").detail-card__picture-img
+              img(src="assets/images/prod.jpg" width="70" height="108" alt="").detail-card__picture-img
             h4.detail-card__name Lorem ipsum
         .detail__col-item
           .detail-card
             picture.detail-card__picture
               source(srcset="assets/images/prod.webp" type="image/webp")
-              img(src="assets/images/prod.jpg" alt="").detail-card__picture-img
+              img(src="assets/images/prod.jpg" width="70" height="108" alt="").detail-card__picture-img
             h4.detail-card__name Lorem ipsum
 
   section.app__section
     .reviews
       .glide
         .reviews__arrows(data-glide-el="controls")
-          .reviews__arrows-item.-left(data-glide-dir="<") <
-          .reviews__arrows-item.-right(data-glide-dir=">") >
+          .reviews__arrows-item.-left(data-glide-dir="<") &lt;
+          .reviews__arrows-item.-right(data-glide-dir=">") &gt;
         .reviews__slider.glide__track(data-glide-el="track")
           .glide__slides
             .glide__slide
@@ -107,7 +106,7 @@ block content
             source(srcset="assets/images/doctor.webp" type="image/webp")
             img(src="assets/images/doctor.jpg" width="150" height="150" alt="").options__picture-img
           .options__description
-            p.options__description-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati magnam adipisci repellendus incidunt, optio accusantium eligendi tempore eaque ipsa recusandae temporibus corporis nobis modi cum?
+            h3.options__description-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati magnam adipisci repellendus incidunt, optio accusantium eligendi tempore eaque ipsa recusandae temporibus corporis nobis modi cum?
             .options__btn
               button(type="button").btn.btn--white.js-order-scroll Заказать
         .options__specs
@@ -124,11 +123,11 @@ block content
           p.order__timer#timer 30:00
           picture.order__picture
             source(srcset="assets/images/prod.webp" type="image/webp")
-            img(src="assets/images/prod.jpg" width="" height="" alt="").order__picture-img
+            img(src="assets/images/prod.jpg" width="230" height="356" alt="").order__picture-img
           .order__current-price 9900₽
           .order__old-price 11900₽
 
-        form.order__form(action="")
+        form.order__form
           .order__form-line
             input.order__form-input#name(type="text" placeholder="Имя")
             label.order__form-label(for="name") Дмитрий
